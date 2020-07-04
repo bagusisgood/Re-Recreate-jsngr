@@ -13,6 +13,7 @@
 		32F7219024B0C1780048CB00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F7218F24B0C1780048CB00 /* Assets.xcassets */; };
 		32F7219324B0C1780048CB00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F7219224B0C1780048CB00 /* Preview Assets.xcassets */; };
 		32F7219624B0C1780048CB00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F7219424B0C1780048CB00 /* LaunchScreen.storyboard */; };
+		32F7219E24B0F5040048CB00 /* PageTabViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F7219D24B0F5030048CB00 /* PageTabViewStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		32F7219224B0C1780048CB00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		32F7219524B0C1780048CB00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32F7219724B0C1780048CB00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F7219D24B0F5030048CB00 /* PageTabViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTabViewStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				32F7218924B0C1740048CB00 /* AppDelegate.swift */,
 				32F7218B24B0C1740048CB00 /* SceneDelegate.swift */,
 				32F7218D24B0C1740048CB00 /* ContentView.swift */,
+				32F7219D24B0F5030048CB00 /* PageTabViewStyle.swift */,
 				32F7218F24B0C1780048CB00 /* Assets.xcassets */,
 				32F7219424B0C1780048CB00 /* LaunchScreen.storyboard */,
 				32F7219724B0C1780048CB00 /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32F7218A24B0C1740048CB00 /* AppDelegate.swift in Sources */,
+				32F7219E24B0F5040048CB00 /* PageTabViewStyle.swift in Sources */,
 				32F7218C24B0C1740048CB00 /* SceneDelegate.swift in Sources */,
 				32F7218E24B0C1740048CB00 /* ContentView.swift in Sources */,
 			);
