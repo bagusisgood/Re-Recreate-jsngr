@@ -18,6 +18,22 @@ struct NavBarButton: View {
     }
 }
 
+struct AddStatus: View {
+    var body: some View {
+        NavigationView  {
+            Text("Add Status")
+        }
+    }
+}
+
+struct DirectMessages: View {
+    var body: some View {
+        NavigationView {
+            Text("Direct Messages")
+        }
+    }
+}
+
 struct StatusCard: View {
     let userName: String
     let userImage: String
@@ -44,7 +60,7 @@ struct StatusScrollView: View {
         ScrollView (.horizontal, showsIndicators: false) {
             HStack {
                 ForEach (0..<20) { item in
-                    StatusCard(userName: item == 0 ? "my_status" : "user_\(self.userId.randomElement() ?? 1234)", userImage: "person.crop.circle.fill")
+                    StatusCard(userName: item == 0 ? "@bagus" : "user_\(self.userId.randomElement() ?? 1234)", userImage: "person.crop.circle.fill")
                 }
                 .animation(.spring())
 
@@ -233,9 +249,15 @@ struct GoodstagramHome: View {
             }
             .navigationBarTitle("Goodstagram", displayMode: .inline)
             .navigationBarItems(leading:
-                NavBarButton(button: "camera"),
+                NavigationLink(destination: AddStatus()){
+                    NavBarButton(button: "camera")
+                    
+                },
                                 trailing:
-                NavBarButton(button: "paperplane")
+                NavigationLink(destination: DirectMessages()){
+                    NavBarButton(button: "paperplane")
+                    
+                }
                 
             )
             
